@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DEF92F8-8C23-4C60-97A2-B49B8A24CDFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EXP.Presenter</RootNamespace>
+    <AssemblyName>EXP.Presenter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MKS.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MKS.Core.Model, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Core.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MKS.Core.Presenter, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GBSens Source\TEAM\MakeSens 2014\Framework 5\ACME.CRM.Presenter\bin\Release\MKS.Core.Presenter.dll</HintPath>
+    </Reference>
+    <Reference Include="MKS.Library, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MKS.Presenter.Model, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GBSens Source\TEAM\MakeSens 2014\Framework 5\ACME.CRM.Presenter\bin\Release\MKS.Presenter.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="MKS.Web">
+      <HintPath>..\..\..\..\..\..\..\GBSens Source\TEAM\MakeSens 2014\Framework 5\ACME.CRM.Presenter\bin\Release\MKS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IModelVue.cs" />
+    <Compile Include="PresenterModelVue.cs" />
+    <Compile Include="ProcessPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EXP.Model\EXP.Model.csproj">
+      <Project>{159a6bc6-8d1c-456d-ab4f-46c4d9028abc}</Project>
+      <Name>EXP.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXP.Service\EXP.Service.csproj">
+      <Project>{d00abd36-ebb9-439d-9f78-7bc2d7912f13}</Project>
+      <Name>EXP.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    @model EXP.Presenter.ObjectModel
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                Exemple MVC
+            </p>
+        </div>
+    </section>
+}
+<h3>Exemple MakeSens avec MVC.NET</h3>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get, new { id = "submitForm" }))
+{
+    <div>
+
+
+        @Html.LabelFor(m => m.LabelNom.Text, Model.LabelNom.Text)
+        @Html.TextBoxFor(m => m.Nom.Text, new { maxlength = 50 })
+
+
+
+        @Html.LabelFor(m => m.LabelPrenom.Text, Model.LabelPrenom.Text)
+        @Html.TextBoxFor(m => m.Prenom.Text, new { maxlength = 50 })
+
+
+        @Html.LabelFor(m => m.LabelTelephone.Text, Model.LabelTelephone.Text)
+        @Html.TextBoxFor(m => m.Telephone.Text, new { maxlength = 50 })
+
+        <br />
+        <button type="submit" id="btnSauvegarder" name="command" value="@Model.Sauvegarder.Command">@Html.DisplayTextFor(m => m.Sauvegarder.Text)</button>
+        <br />
+        <button type="submit" id="btnAbout" name="command" @if (@Model.About.Enabled==false) {  @("disabled='1'")  } value="@Model.About.Command">@Html.DisplayTextFor(m => m.About.Text)</button>
+
+
+    </div>
+}

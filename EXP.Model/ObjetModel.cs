@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace EXP.Model
 {
+    /// <summary>
+    /// Objet pour le traitement métier.
+    /// </summary>
     public class ObjetModel
     {
         public string Nom { get; set; }

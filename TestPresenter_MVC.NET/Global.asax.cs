@@ -24,7 +24,7 @@ namespace TestPresenter_MVC.NET
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 
-
+            //Définition de la navigation
             MKS.Core.Presenter.Navigation.Form.Add("Index", "Index");
             MKS.Core.Presenter.Navigation.Form.Add("About", "About");
 

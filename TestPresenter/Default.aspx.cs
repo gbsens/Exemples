@@ -14,6 +14,10 @@ using System.Text;
 
 namespace EXP.UI
 {
+    /// <summary>
+    /// Implémante la vue défini dans la couche de présentation  et fais l'assignation au contrôles de la page web.
+    /// Hérite du MKS.Web.MVP.Page pour supporter les fonctions incluse dans le IView.    
+    /// </summary>
     public partial class Default : MKS.Web.MVP.Page, IModelVue
     {
         PresenterModelVue p;
@@ -25,10 +29,12 @@ namespace EXP.UI
         }
         protected void btnSauvegarder_Click(object sender, EventArgs e)
         {
+            // Envoi la commade Sauvegarder tel que défini dans l'Initialisation du processus. L'opération est également défini dans le processus
            ExecuteCommand(_Sauvegarder.Command);
         }
         protected void btnAbout_Click(object sender, EventArgs e)
         {
+            // Envoi la commade About tel que défini dans l'Initialisation du processus. L'opération est également défini dans le processus
             ExecuteCommand(_About.Command);
         }
 

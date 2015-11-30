@@ -8,11 +8,14 @@ using MKS.Core.Presenter;
 
 namespace EXP.Presenter
 {
+    /// <summary>
+    /// Fait le lien entre le processus de présentation et la vue pour l'interface utilisateur.
+    /// </summary>
     public class PresenterModelVue:Presenter<IModelVue,ProcessPresenter>
     {
         public PresenterModelVue(IModelVue view): base(view)
         {
-
+            
         }
     }
 }

@@ -16,26 +16,29 @@ namespace TestPresenter_MVC.NET.Controllers
         [AcceptVerbs(HttpVerbs.Get)]
         public ActionResult Index(ObjectModel model, string command)
         {
-
+            //
             p = new PresenterModelVue(model);
            
 
             //Valide si il faut executer une commande
             if (command != null)
             {
-                
-                p.Start(false);
-                model.ExecuteCommand(command);
+
+                //Démarre le présenteur et demande de ne pas réinitialiser certaine valeur
+                p.Start(false); 
+                //Appel à la fonction du processus de présentation en fonction de la commande, Le nom de la commande doit être identique à l'opération définit.
+                model.ExecuteCommand(command); 
             }
             else
             {
                 p.Start();
             }
 
-
+            //Assigne le résultat du view logique qui contient l'ensemble des informations du résultat d'exécution du processus
+            // Pour le passer au _layout.chtml qui détermine en fonction des résultats l'affichage des messages.
             ViewBag.ViewLogics = model.ViewLogics;
 
-            //Execute les redirections si la logique de présentation à déterminer un GoForm en passant des donnees au formulaires
+            //Execute les redirections si le processus de présentation à demandé une Navigation.
             if (model.ViewLogics.GoForm != null)
                 return View(model.ViewLogics.GoForm.Item1, model.ViewLogics.GoForm.Item2[0]);
 

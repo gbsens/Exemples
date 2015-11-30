@@ -12,7 +12,9 @@ using EXP.Mapping;
 namespace EXP.Metier
 {
     /// <summary>
-    /// Classe métier pour l'objet ObjectModel
+    /// Classe pour faire l'assemblage des processus métier de l'objet ObjectModel
+    /// Les opérations CRUD sont définient en fonction de l'héritage du Business. 
+    /// Dans l'exemble les opérations sont : Add, Update, Delete, Select et Edit
     /// </summary>
     public class BusinessMetier:Business<ObjetModel>
     {
@@ -26,6 +28,9 @@ namespace EXP.Metier
 
             //Classe qui fait la persistence vers une couche de donnée
             SetDataMap<MapObjetModel>();
+
+            //Classe qui contien la connexion à la base de données
+            //SetConfiguration<Config>();
         }
     }
 }

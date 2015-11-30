@@ -17,6 +17,7 @@ namespace TestPresenter
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            //Définition de la navigation
             MKS.Core.Presenter.Navigation.Form.Add("Index", "Default.aspx");
             MKS.Core.Presenter.Navigation.Form.Add("About", "About.aspx");
 

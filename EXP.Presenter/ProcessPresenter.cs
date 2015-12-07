@@ -18,6 +18,7 @@ namespace EXP.Presenter
     /// </summary>
     public class ProcessPresenter:Process<IModelVue>
     {
+        
         /// <summary>
         /// Processus d'initialisation d'une vue au démarrage du Presenteur.
         /// L'initialisation permet d'assigner les Libellés, les valeurs par défaut etc..
@@ -76,6 +77,7 @@ namespace EXP.Presenter
             btAbout.Enabled = true;
             view.About = btAbout;
         }
+        
         //Fonction appelé lorsque la commande About est lancé
         public void About(CommandEventArgsCustom args, IModelVue view, MKS.Core.Presenter.Interfaces.IPresenter presenter)
         {

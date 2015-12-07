@@ -30,16 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MKS.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Core.dll</HintPath>
+    <Reference Include="MKS.Core, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.8\lib\MKS.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MKS.Core.Model, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Core.Model.dll</HintPath>
+    <Reference Include="MKS.Core.Model, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.8\lib\MKS.Core.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MKS.Library, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.2\lib\MKS.Library.dll</HintPath>
+    <Reference Include="MKS.Library, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.8\lib\MKS.Library.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

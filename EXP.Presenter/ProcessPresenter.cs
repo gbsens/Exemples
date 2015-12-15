@@ -60,17 +60,20 @@ namespace EXP.Presenter
         /// <param name="presenter">Offre un accès au présenteur parent</param>
         public void Sauvegarder(CommandEventArgsCustom args, IModelVue view, MKS.Core.Presenter.Interfaces.IPresenter presenter)
         {
-            ObjetModel obj = new ObjetModel();
+            ObjContact obj = new ObjContact();
             obj.Nom = view.Nom.Text;
             obj.Prenom = view.Prenom.Text;
             obj.Telephone = view.Telephone.Text;
 
             ServiceMetier s = new ServiceMetier();
-            s.Ajouter(obj);
+            obj=s.Ajouter(obj);
 
             //si il n'y a aucune erreur le processus continue et affiche le message suivant. 
             view.ShowMessage("Information","Ajout avec succes", Severity.Success);
-            
+
+            //Assigne l'identifiant à la vue.
+            view.LabelIdentifiant = new Label(obj.Id.ToString());
+
             //Reactive le bouton About
             Button btAbout = new Button("Apropos");
             btAbout.Command = "About";

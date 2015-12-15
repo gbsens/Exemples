@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessMetier.cs" />
+    <Compile Include="BusinessMetierContact.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="ProcessAdd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

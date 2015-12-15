@@ -21,7 +21,7 @@
 {
     <div>
 
-
+        <h3>ID:@Model.LabelIdentifiant.Text</h3>
         @Html.LabelFor(m => m.LabelNom.Text, Model.LabelNom.Text)
         @Html.TextBoxFor(m => m.Nom.Text, new { maxlength = 50 })
 
@@ -37,8 +37,8 @@
         <br />
         <button type="submit" id="btnSauvegarder" name="command" value="@Model.Sauvegarder.Command">@Html.DisplayTextFor(m => m.Sauvegarder.Text)</button>
         <br />
-        <button type="submit" id="btnAbout" name="command" @if (@Model.About.Enabled==false) {  @("disabled='1'")  } value="@Model.About.Command">@Html.DisplayTextFor(m => m.About.Text)</button>
+        <button type="submit" id="btnAbout" name="command" @if (@Model.About.Enabled == false) {  @("disabled='1'")   } value="@Model.About.Command">@Html.DisplayTextFor(m => m.About.Text)</button>
 
 
-    </div>
+</div>
 }

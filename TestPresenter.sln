@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXP.Service", "EXP.Service\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPresenter_MVC.NET", "TestPresenter_MVC.NET\TestPresenter_MVC.NET.csproj", "{59BC7377-A21C-421B-A732-ECCD0193693B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Script", "Database Script", "{A4995B0C-38EF-4784-A1AD-C179E28EE09D}"
+	ProjectSection(SolutionItems) = preProject
+		dbo.Contact = dbo.Contact
+		README.txt = README.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

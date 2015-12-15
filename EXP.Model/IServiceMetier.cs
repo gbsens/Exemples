@@ -8,6 +8,6 @@ namespace EXP.Model
 {
     public interface IServiceMetier
     {
-        ObjetModel Ajouter(ObjetModel objModel);
+        ObjContact Ajouter(ObjContact objModel);
     }
 }

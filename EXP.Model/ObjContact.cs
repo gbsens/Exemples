@@ -11,8 +11,9 @@ namespace EXP.Model
     /// <summary>
     /// Objet pour le traitement métier.
     /// </summary>
-    public class ObjetModel
+    public class ObjContact
     {
+        public int? Id { get;set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public string Telephone { get; set; }

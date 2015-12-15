@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IServiceMetier.cs" />
-    <Compile Include="ObjetModel.cs" />
+    <Compile Include="ObjContact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationObjetModel.cs" />
   </ItemGroup>

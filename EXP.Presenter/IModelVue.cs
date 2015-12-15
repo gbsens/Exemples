@@ -21,6 +21,7 @@ namespace EXP.Presenter
     /// </remarks>
     public interface IModelVue:IView
     {
+        Label LabelIdentifiant { get; set; }
         Label LabelNom { get; set; }
         Label LabelPrenom { get; set; }
         Label LabelTelephone { get; set; }

@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Contact] (
+    [Nom]       NVARCHAR (50) NULL,
+    [Prenom]    NVARCHAR (50) NULL,
+    [Telephone] NVARCHAR (13) NULL,
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    CONSTRAINT [PK_Contact] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

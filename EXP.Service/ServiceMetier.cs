@@ -14,10 +14,10 @@ namespace EXP.Service
     /// </summary>
     public class ServiceMetier:IServiceMetier
     {
-        public ObjetModel Ajouter(ObjetModel objModel)
+        public ObjContact Ajouter(ObjContact objModel)
         {
             //Déclaration du métier à appeler
-            BusinessMetier b = new BusinessMetier();
+            BusinessMetierContact b = new BusinessMetierContact();
             //Execution de la fonction CRUD supporté par le séquenceur.
             
             return b.Add(objModel);

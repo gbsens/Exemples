@@ -16,9 +16,9 @@ namespace EXP.Metier
     /// Les opérations CRUD sont définient en fonction de l'héritage du Business. 
     /// Dans l'exemble les opérations sont : Add, Update, Delete, Select et Edit
     /// </summary>
-    public class BusinessMetier:Business<ObjetModel>
+    public class BusinessMetierContact:Business<ObjContact>
     {
-        public BusinessMetier()
+        public BusinessMetierContact()
         {
             //Classe de validation de contexte sur l'objet ObjectModel
             SetValidation<ValidationObjetModel>();
@@ -30,7 +30,7 @@ namespace EXP.Metier
             SetDataMap<MapObjetModel>();
 
             //Classe qui contien la connexion à la base de données
-            //SetConfiguration<Config>();
+            SetConfiguration<Config>();
         }
     }
 }

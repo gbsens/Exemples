@@ -12,10 +12,16 @@ namespace EXP.Metier
     {
         public override System.Data.IDbConnection GetConnection()
         {
-            //Mettre le code pour initier une base de données
             
+            string BDName="ExempleMKS"; //Nom de la base de donnée
+            string BDSource=@"STEPHANEALIEN\SQLEXPRESS"; // Nom du Serveur SQL. *** changer pour votre sql serveur ***
 
-            return null;
+            string BSConn = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=" + BDName + ";Data Source=" + BDSource;
+
+            System.Data.SqlClient.SqlConnection sq = new System.Data.SqlClient.SqlConnection(BSConn);                       
+            
+            return  sq;
+            
         }
     }
 }

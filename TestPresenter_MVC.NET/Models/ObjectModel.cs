@@ -57,5 +57,11 @@ namespace EXP.Presenter
             get;
             set;
         }
+
+        public MKS.Core.Presenter.UI.Label LabelIdentifiant
+        {
+            get;
+            set;
+        }
     }
 }

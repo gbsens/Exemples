@@ -107,7 +107,18 @@ namespace EXP.UI
 
         #region Implémentation de la vue
 
-
+        private MKS.Core.Presenter.UI.Label _Identifiant = new MKS.Core.Presenter.UI.Label();
+        public MKS.Core.Presenter.UI.Label LabelIdentifiant
+        {
+            get
+            {
+                return null;
+            }
+            set
+            {
+                lblIdentifiant.Text = value.Text;
+            }
+        }
 
         public MKS.Core.Presenter.UI.Label LabelNom
         {
@@ -219,6 +230,7 @@ namespace EXP.UI
 
 
         #endregion implémentation de la vue
+
 
 
 

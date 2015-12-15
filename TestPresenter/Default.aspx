@@ -12,7 +12,9 @@
             <a href="#" class="close" data-dismiss="alert">&times;</a>
             <strong><%=this._MessageTitre %></strong> <%= this._MessageDescription %>
         </div>
-            
+        <div>
+            <asp:Label  ID="lblIdentifiant" runat="server" Text="ID"></asp:Label>
+        </div>
         <div >
                 <asp:Label  ID="lblNom" runat="server" Text="Label"></asp:Label>
                 <asp:TextBox CssClass="form-control" ID="txtNom" runat="server"></asp:TextBox>

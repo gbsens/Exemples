@@ -87,7 +87,7 @@ namespace EXP.Presenter
             //Permet de naviguer dans d'autre formulaire web, forms ou autres en fonction des la commandes.
             //La définition de la navigation est e fonction de la technologie d'interface utilisateur
             //Dans les deux exemples le Global.asax pour le UI TestPresenter contient la navigation            
-            view.Navigate(view.About.Command,view);
+            view.Navigate(view.About.Command);
         }
         
     }

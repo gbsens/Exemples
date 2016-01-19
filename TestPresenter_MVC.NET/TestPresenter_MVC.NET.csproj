@@ -40,24 +40,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MKS.Core">
-      <HintPath>..\..\..\..\..\..\..\GBSens Source\TEAM\MakeSens 2014\Framework 5\ACME.CRM.Presenter\bin\Release\MKS.Core.dll</HintPath>
+    <Reference Include="MKS.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Core.dll</HintPath>
     </Reference>
     <Reference Include="MKS.Core.Model, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\GBSens Source\TEAM\MakeSens 2014\Framework 5\ACME.CRM.Presenter\bin\Release\MKS.Core.Model.dll</HintPath>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Core.Model.dll</HintPath>
     </Reference>
     <Reference Include="MKS.Core.Presenter, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Presenter.3.0.0.8\lib\MKS.Core.Presenter.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Core.Presenter.dll</HintPath>
+    </Reference>
+    <Reference Include="MKS.Library, Version=3.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Library.dll</HintPath>
     </Reference>
     <Reference Include="MKS.Presenter.Model, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Presenter.3.0.0.8\lib\MKS.Presenter.Model.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Presenter.Model.dll</HintPath>
     </Reference>
     <Reference Include="MKS.Web, Version=3.0.0.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MKS.MakeSens.Framework.Presenter.3.0.0.8\lib\MKS.Web.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MKS.MakeSens.Framework.Core.3.0.0.9\lib\MKS.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

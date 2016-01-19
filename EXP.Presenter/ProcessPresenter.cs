@@ -35,7 +35,7 @@ namespace EXP.Presenter
             view.LabelNom = new Label("Nom");
             view.LabelPrenom = new Label("Prénom");
             view.LabelTelephone = new Label("Téléphone");
-            
+            view.LabelIdentifiant = new Label("0");
             //Si true Charge les valeurs par défaut.
             if(isInit)
                 view.Telephone = new Input("418-830-3407");
@@ -87,7 +87,10 @@ namespace EXP.Presenter
             //Permet de naviguer dans d'autre formulaire web, forms ou autres en fonction des la commandes.
             //La définition de la navigation est e fonction de la technologie d'interface utilisateur
             //Dans les deux exemples le Global.asax pour le UI TestPresenter contient la navigation            
-            view.Navigate(view.About.Command);
+
+            Dictionary<string,object> d=new Dictionary<string,object>();
+            d.Add("VIEW",view);
+            view.Navigate(view.About.Command,d);
         }
         
     }

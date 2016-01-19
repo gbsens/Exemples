@@ -40,7 +40,7 @@ namespace TestPresenter_MVC.NET.Controllers
 
             //Execute les redirections si le processus de présentation à demandé une Navigation.
             if (model.ViewLogics.GoForm != null)
-                return View(model.ViewLogics.GoForm.Item1, model.ViewLogics.GoForm.Item2[0]);
+                return View(model.ViewLogics.GoForm.Item1, model.ViewLogics.GoForm.Item2["VIEW"]);
 
             return View(model);
         }
